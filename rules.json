@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "doubleclick.net",
+      "resourceTypes": ["main_frame", "script", "image", "stylesheet", "object", "xmlhttprequest", "ping", "media", "websocket", "font", "other"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "googlesyndication.com",
+      "resourceTypes": ["main_frame", "script", "image", "stylesheet", "object", "xmlhttprequest", "ping", "media", "websocket", "font", "other"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "adservice.google.com",
+      "resourceTypes": ["main_frame", "script", "image", "stylesheet", "object", "xmlhttprequest", "ping", "media", "websocket", "font", "other"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "adsafeprotected.com",
+      "resourceTypes": ["main_frame", "script", "image", "stylesheet", "object", "xmlhttprequest", "ping", "media", "websocket", "font", "other"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "googleadservices.com",
+      "resourceTypes": ["main_frame", "script", "image", "stylesheet", "object", "xmlhttprequest", "ping", "media", "websocket", "font", "other"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "pagead2.googlesyndication.com",
+      "resourceTypes": ["main_frame", "script", "image", "stylesheet", "object", "xmlhttprequest", "ping", "media", "websocket", "font", "other"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "adserver.", 
+      "resourceTypes": ["main_frame", "script", "image", "stylesheet", "object", "xmlhttprequest", "ping", "media", "websocket", "font", "other"]
+    }
+  },
+
+  {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "googlevideo.com/videoplayback", 
+      "resourceTypes": ["media"] 
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "youtube.com/api/ads",
+      "resourceTypes": ["xmlhttprequest", "script"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "ytimg.com/ads", 
+      "resourceTypes": ["image", "script", "other"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "googleadservices.", 
+      "resourceTypes": ["main_frame", "script", "image", "stylesheet", "object", "xmlhttprequest", "ping", "media", "websocket", "font", "other"]
+    }
+  },
+  {
+  "id": 12,
+  "priority": 2, 
+  "action": {
+    "type": "redirect",
+    "redirect": { "extensionPath": "/blank.html" } 
+  },
+  "condition": {
+    "urlFilter": "malicious-redirect-domain.com/track",
+    "resourceTypes": ["main_frame"] 
+  }
+}
+]
